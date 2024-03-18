@@ -4,6 +4,13 @@
 
 StockPriceAlert is a Python application that monitors stock prices and sends alerts when significant price changes occur. It fetches real-time stock data using the AlphaVantage API and retrieves news articles related to specific companies using the News API. The application sends alerts via SMS using Twilio, providing users with timely information about stock price movements and relevant news articles.
 
+## Features
+
+- **Real-time Stock Price Monitoring:** Fetches real-time stock data using the AlphaVantage API to monitor price changes.
+- **News Article Retrieval:** Retrieves news articles related to specific companies using the News API to provide additional context.
+- **Alert Notifications:** Sends alert notifications via SMS using Twilio when significant price changes occur.
+- **Customizable Settings:** Allows users to specify the stock symbol, company name, and threshold for price change alerts.
+
 ## Setup
 
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
@@ -32,8 +39,14 @@ pip install -r requirements.txt
 ```bash
 python3 main.py
 ```
+## File Structure
 
-
+- **`main.py`:** Entry point of the application. Executes the main functionality and orchestrates the data handling and alert sending process.
+- **`data_handler.py`:** Module responsible for fetching stock data from the AlphaVantage API and retrieving news articles using the News API.
+- **`alert_handler.py`:** Module responsible for sending alert notifications via SMS using Twilio.
+- **`config.py`:** Configuration file containing sensitive information such as API keys and phone numbers. Must be filled out with actual values before running the application.
+- **`config_template.py`:** Template file for `config.py`. Contains placeholders for API keys and phone numbers.
+  
 ## Config Template
 
 The `config_template.py` file provides a template for storing sensitive information. Here's how to use it:
@@ -57,3 +70,10 @@ To run StockPriceAlert on PythonAnywhere and schedule it to run daily:
 
 Now, StockPriceAlert will run automatically every day on PythonAnywhere, providing users with up-to-date stock price alerts and news.
 
+## Contributions
+
+Contributions are welcome!
+
+## Licensing
+
+This project is licensed under the [MIT License](LICENSE).
