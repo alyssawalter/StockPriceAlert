@@ -45,7 +45,7 @@ def get_stock_data(stock_symbol):
     else:
         day_before_yesterday_price = None
 
-    price_change = (yesterday_price - 100) / yesterday_price
+    price_change = (yesterday_price - day_before_yesterday_price) / yesterday_price
 
     return price_change
 

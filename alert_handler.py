@@ -21,3 +21,4 @@ def send_alert(stock_symbol, price_change_with_sym, articles):
             to=TO_PHONE_NUMBER,
         )
 
+
