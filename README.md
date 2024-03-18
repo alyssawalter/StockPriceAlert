@@ -50,13 +50,13 @@ python3 main.py
 ## Config Template
 
 The `config_template.py` file provides a template for storing sensitive information. Here's how to use it:
-
+### API Keys
 - **AlphaVantage API Key:** Replace `"YOUR_ALPHAVANTAGE_API_KEY_HERE"` with your AlphaVantage API key.
 - **News API Key:** Replace `"YOUR_NEWS_API_KEY_HERE"` with your News API key.
-- **Twilio Credentials:**
+### Twilio Credentials
 - **Twilio Account SID:** Replace `"YOUR_TWILIO_ACCOUNT_SID_HERE"` with your Twilio Account SID.
 - **Twilio Auth Token:** Replace `"YOUR_TWILIO_AUTH_TOKEN_HERE"` with your Twilio Auth Token.
-- **Twilio Phone Numbers:**
+### Twilio Phone Numbers
 - **From Phone Number:** Replace `"YOUR_TWILIO_PHONE_NUMBER_HERE"` with your Twilio phone number.
 - **To Phone Number:** Replace `"RECIPIENT_PHONE_NUMBER_HERE"` with the recipient's phone number.
 
